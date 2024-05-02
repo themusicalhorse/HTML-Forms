@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <script type="text/javascript" src="GraceDiacon_forms.js"></script>
+        <link rel="stylesheet" type="text/css" href="GraceDiacon_formstyles.css">
+        <!--Last Updated: 5/1/24 9:42pm-->
+    </head>
+    <body> 
+        <img src="https://www.ecok.edu/themes/ecu/img/logo-big.png" alt="ECU Logo">
+        <nav>
+            <div class="container-ul">
+            <h1>Page Navigation</h1>
+            <ul class="myUL">
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#CurrentClasses">Current Classes</a></li>
+                <li><a href="#Hobbies">Hobbies</a></li>
+                <li><a href="#Forms">Forms</a></li>
+            </ul>
+            </div>
+        </nav>
+        <section id="AboutMe">
+            <h1>About Me</h1>
+                <img src="photos/computercat.jpg" alt="A cat snuggled up beside a computer.">
+                <p><b>My name is Grace.</b><br>
+                <i>My major is Computer Science.</i><br>
+                <u>I am a junior.</u><br></p>
+        </section>
+        <div class="container-ul">
+        <section id="CurrentClasses">
+            <p>This semester I am taking the following classes:</p>
+            <ul class="myUL">
+                <li>CMPSC-3323 Internet Programming</li>
+                <li>CMPSC-4213 Data Base Design</li>
+                <li>CPSMA-3913 Discrete Mathematics</li>
+                <li>SPAN-2223 Intermediate Spanish II</li>
+            </ul>
+        </div>
+
+<br>
+<hr width="50%">
+<br>
+            <div class="container-grid">
+                <div class="grid-1">
+                <section id="internetprogramming">
+                <h2>CMPSC-3323 Internet Programming</h2>
+                    <p>In this class I am currently learning about HTML. I am excited to further my knowledge with CSS and Javascript.</p>
+                </section>
+                </div>
+
+                <div class="grid-2">
+                <section id="databasedesign">
+                <h2>CMPSC-4213 Data Base Design</h2>
+                    <p>In this class we are learning about databases and their design. Further into the semester I believe we will work with a little SQL.</p>
+                </section>
+                </div>
+
+                <div class="grid-3">
+                <section id="discretemath">
+                <h2>CPSMA-3913 Discrete Mathematics</h2>
+                    <p>I am actually really enjoying this class. I like math a lot. It's a difficult, but I like it.</p>
+                </section>
+                </div>
+
+                <div class="grid-4">
+                <section id="spanish">
+                <h2>SPAN-2223 Intermediate Spanish II</h2>
+                    <p>This is the last Spanish class I will take, and I love it. This semester we have learned many new verb tenses.</p>
+                </section>
+                </div>
+                </div>
+        </section>
+
+<br>
+<hr width="50%">
+<br>
+    <section id="Forms">
+        <div class="container-grid">
+            <div class="grid-5">
+                <section id="arithmetic">
+                <h2>Arithmetic</h2>
+                <p>Performs whichever operation is selected on the two numbers entered.</p>
+
+                <form name="ArithmeticForm">
+                <label>First Number:</label>
+                    <input type="number" name="arithmeticOne" placeholder="1" />
+                <br>
+                <label>Second Number:</label>
+                    <input type="number" name="arithmeticTwo" placeholder="2" />
+                <br>
+                <br>
+                <legend>Select Operator:</legend><br>
+                    <input type="radio" id="addition" name="arithmeticOperator" value="Addition" checked>
+                        <label for="addition">Addition</label><br>
+                    <input type="radio" id="subtraction" name="arithmeticOperator" value="Subtraction">
+                        <label for="subtraction">Subtraction</label><br>
+                    <input type="radio" id="multiplication" name="arithmeticOperator" value="Multiplication">
+                        <label for="multiplication">Multiplication</label><br>
+                    <input type="radio" id="division" name="arithmeticOperator" value="Division">
+                        <label for="division">Division</label><br>
+                <br>
+                <button type="button" onclick="performArithmetic()">Calculate</button>
+                </form>
+
+                <br>
+                <div id="arithmeticResult">
+                </div>
+                </section>
+                </div>
+
+                <div class="grid-6">
+                    <section id="factorial">
+                    <h2>Factorial</h2>
+                    <p>Performs the factorial of the input.</p>
+
+                    <form name="FactorialForm">
+                        <label>Enter a Number:</label>
+                            <input type="number" name="factorialOne" placeholder="1" />
+                        <br>
+                        <br>
+                        <button type="button" onclick="performFactorial()">Calculate</button>
+                        </form>
+
+                        <br>
+                        <div id="factorialResult">
+                        </div>
+                    </section>
+                    </div>
+
+                    <div class="grid-7">
+                        <section id="fibonacci">
+                        <h2>Fibonacci</h2>
+                        <p>Results the Fibonacci number to the nth place where n = the input.</p>
+
+                        <form name="FibonacciForm">
+                            <label>Enter a Number:</label>
+                                <input type="number" name="fibonacciOne" placeholder="1" />
+                            <br>
+                            <br>
+                            <button type="button" onclick="performFibonacci()">Calculate</button>
+                            </form>
+
+                            <br>
+                            <div id="fibonacciResult">
+                            </div>
+                        </section>
+                        </div>
+
+                        <div class="grid-8">
+                            <section id="range">
+                            <h2>Range</h2>
+                            <p>Calculates the range between the entered numbers.</p>
+
+                            <form name="RangeForm">
+                                <label>First Number:</label>
+                                    <input type="number" name="rangeOne" placeholder="1" />
+                                <br>
+                                <label>Second Number:</label>
+                                    <input type="number" name="rangeTwo" placeholder="2" />
+                                <br>
+                                <label>Third Number:</label>
+                                    <input type="number" name="rangeThree" placeholder="3" />
+                                <br>
+                                <button type="button" onclick="performRange()">Calculate</button>
+                                </form>
+
+                                <br>
+                                <div id="rangeResult">
+                                </div>
+                            </section>
+                            </div>
+
+                            <div class="grid-9">
+                                <section id="mailingList">
+                                <h2>Mailing List</h2>
+                                <p>Join our mailing list!</p>
+
+                                <form name="MailingList">
+                                <label>First Name:</label>
+                                    <input type="text" name="fname" placeholder="First Name"/>
+                                <br>
+                                <label>Last Name:</label>
+                                    <input type="text" name="lname" placeholder="Last Name"/>
+                                <br>
+                                <label>Email:</label>
+                                    <input type="email" name="email" placeholder="email@gmail.com"/>
+                                <br>
+                                <label>ZIP Code:</label>
+                                    <input type="number" name="zip" placeholder="12345"/>
+                                <br>
+                                <br>
+
+                                <button type="button" onclick="addMailingList()">Sign Up</button>
+                                <button type="button" onclick="reset()">Reset</button>
+                                </form>
+                                <div id="newMail">
+                                </div>
+                                </section>
+                                </div>
+        </div>
+    </section>
+
+<br>
+<hr width="50%">
+<br>
+
+        <div class="container-ul">
+            <section id="Hobbies">
+                <p>I am also interested in:</p>
+                <ul class="myUL">
+                    <li>Jiu Jitsu</li>
+                    <li>Horses</li>
+                    <li>Videogames</li>
+                </ul>
+            </div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/V9HCudKOdx4?si=irRm08MQqb7OpS6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+            <a href="https://www.ecok.edu/">ECU Home Page</a>
+    </body>
+</html>
